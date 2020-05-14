@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Крестики и нолики</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/script.min.js" defer></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">Крестики и нолики</header>
+		<form class="form">
+			<div class="form__player">
+				<span class="form__title">Игрок:</span>
+				<input class="form__name" name="player1" type="text" placeholder="Введите имя" maxlength="30">
+			</div>
+			<div class="form__player form__player_none">
+				<span class="form__title">Игрок 2:</span>
+				<input class="form__name" name="player2"  type="text" placeholder="Введите Имя" maxlength="30">
+			</div>	
+			<div class="form__option form__optionType">
+				<div class="form__optionTitle">Выберите тип игры</div>
+				<div class="radio form__radio">
+					<input class="radio__input" type="radio" name="variant" value="1" checked="checked">
+					<span class="radio__title">С компьютером</span>
+				</div>
+				<div class="radio form__radio">
+					<input class="radio__input" type="radio" name="variant" value="2">
+					<span class="radio__title">С другом</span>
+				</div>
+				
+			</div>
+			<div class="form__option form__optionLevel">
+				<div class="form__optionTitle">Выберите сложность игры</div>
+				<div class="radio form__radio" title="ходит как захочет">
+					<input class="radio__input" type="radio" name="level" value="1" checked="checked">
+					<span class="radio__title">легкий</span>
+				</div>
+				<div class="radio form__radio" title="не проигрывает">
+					<input class="radio__input" type="radio" name="level" value="2">
+					<span class="radio__title">средний</span>
+				</div>
+			</div>
+			<button class="button form__send">Начать</button>
+			<button class="button form__back">Вернуться к игре</button>
+		</form>
+	</div>
+	<div class="game">
+		<div class="header game__header">
+			<div class="header-title">Счет</div>
+			<div class="score">
+				<div class="score__player1">
+					<div class="score__title">Игрок1</div>
+					<div class="score__first score__number">0</div>
+				</div>
+				<div class="score__delimiter">:</div>
+				<div class="score__player2">
+					<div class="score__title">Игрок2</div>
+					<div class="score__two score__number">0</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="container__cell"></div>
+			<div class="container__cell"></div>
+			<div class="container__cell"></div>
+			<div class="container__cell"></div>
+			<div class="container__cell"></div>
+			<div class="container__cell"></div>
+			<div class="container__cell"></div>
+			<div class="container__cell"></div>
+			<div class="container__cell"></div>
+		</div>
+	</div>
+</body>
+</html>
+
